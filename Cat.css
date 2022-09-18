@@ -1,0 +1,115 @@
+section *{
+    margin: 0;
+    padding: 0;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+section{
+    color: black;
+    
+}
+
+.product-img{
+    width: 80%;
+    height: 70%;
+    padding: 5%;
+    margin-left: 20%;
+    margin-right: 30%;
+}
+section .container{
+   
+     margin: auto;
+}
+section :not(nav){
+    padding: 0rem 1.5rem 0rem 0rem;
+    
+}
+
+
+.shop {
+    margin-top: 9rem;
+}
+.shop-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,auto));
+    gap: 1.3rem;
+    margin-bottom: 2rem;
+}
+.product-box :not(.product-img){
+ position: relative;
+ margin-left: 25%;
+}
+.product-img:hover{
+    padding: 10px;
+    border: 1px solid gainsboro;
+    border-radius: 20%;
+    transition: 0.4s;
+}
+.product-title{
+    margin-left: 50%;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    
+}
+.price{
+    margin-left: 50%;
+}
+
+.add-cart{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: rgb(25, 18, 36);
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+.add-cart:hover{
+    background: rgb(205, 198, 236);
+    color: rgb(49, 42, 42);
+}
+/* Breakpoints / making responsive*/
+@media(max-width:1080px)
+{
+.nav
+{
+padding: 15px;
+}
+section{
+    padding: 3rem 0 2rem;
+}
+.container{
+    margin: 0 auto;
+    width: 70%;
+}
+.shop{
+    margin-top: 2rem !important;
+}
+}
+
+@media(max-width:400px)
+{
+    .nav
+    {
+    padding: 11px;
+    }
+    .logo{
+        font-size: 1rem;
+    }
+    .cart{
+        width: 320px;
+    }
+}
+
+@media(max-width:360px){
+    .shop{
+        margin-top: 1 rem !important;
+    }
+    .cart{
+        width: 280px;
+    }
+}

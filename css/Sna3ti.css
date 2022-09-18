@@ -1,0 +1,426 @@
+
+.hero-section,.banner1{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    left: 0;
+    top: 0;
+}
+
+.hero-section .desc-heading{
+    height:150px ;
+    display: block;
+    margin: auto;
+    font-family: 'Quintessential', cursive;
+    color: rgb(19, 19, 18);
+    
+}
+.hero-section .sub-heading{
+    margin-top: 10px;
+    text-align: center;
+    color: black;
+    text-transform: capitalize;
+    font-size: 35px;
+    font-weight: 300;
+    font-family: 'Quintessential', cursive;
+    color: rgb(19, 19, 18);
+}
+.imge-header{
+    width: 100%;
+    height: 550px;
+    position: absolute;
+}
+.text-box{
+    width: 800px;
+    height: 100PX;
+    position:absolute;
+    left:100px;
+    top:300PX;
+    opacity: 0.8;
+    color: rgba(29, 14, 14, 0.823);
+    font-family: 'Quintessential', cursive;
+    animation-duration: 8s;
+    animation-name: slidein;
+    animation-timing-function:ease;
+    animation-iteration-count: infinite;
+    font-size:20PX;
+    border-radius:10PX 10PX;
+    background-color: #fff;
+}  
+@keyframes slidein {
+    from {
+        margin-left: 19%;
+        width:60%;
+    }
+    to {
+        margin-left: 13%;
+        width: 66%;
+        font-size:21PX;
+    }
+}
+
+
+.text-box h1{
+    margin-top: 5PX;
+    margin-left: 50PX;
+}
+.text-box p{
+    box-sizing: border-box;
+    font-size: 20PX;
+    margin-left: 60PX;
+}
+/* BEST-SELLER */
+.product{
+position: relative;
+overflow: hidden;
+padding: 20px 0;
+
+}
+.icons{
+    width: 10vw;
+    border: none;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    size: 40PX;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+    z-index: 8;
+}
+.iconleft{
+    left: 0;
+    transform: rotate(180 deg);
+
+}
+
+.iconright{
+    right: 0;
+    margin-right: 20px;
+}
+.produit-categorie{
+    padding:0 10vh;
+    font-size: 30px;
+    font-weight:bold ;
+    margin-bottom: 40px;
+    font-family:Arial, Helvetica, sans-serif;
+    color: #5a5757;
+    text-transform: capitalize;
+
+}
+.produit-containe{
+    padding: 0px 10vw;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+.produit-containe::-webkit-scrollbar{display: none;}
+.product-card{
+    flex: 0 0 auto;
+    width: 250px;
+    height: 450px;
+    margin-right: 48px;
+    box-sizing: border-box;
+}
+
+.produit-images{
+   position: relative;
+   width: 100%;
+   height: 230px;
+   overflow: hidden;
+   border-radius: 20PX 0;
+
+}
+.produit-images:hover{
+    
+box-shadow: 1px 5px 28px -1px  rgba(83, 78, 78, 0.86);
+}
+.produit-1{
+    width: 100%;
+    height: 230px;
+    background-size: cover;
+    object-fit: cover;
+    box-sizing: border-box;
+}
+.offer{
+    position: absolute;
+    background: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    color: #bd0909;
+    right: 10px;
+    top: 10px;
+    text-transform: capitalize;
+
+   opacity: 0.7;
+
+   
+}
+.btn-ajouter{
+    font-family: 'Quintessential', cursive;
+    position: absolute;
+    bottom: 30px;
+    left: 19%;
+    text-align: center;
+    transform: translateX(-50);
+    width:160px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 1px;
+    font-weight: 600;
+    box-shadow:2PX 2PX 30px rgb(000, 000, 000);
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    transition: 0.8s;
+    cursor: pointer; 
+    opacity: 0;
+
+    
+}
+.btn-ajouter a{
+    color: rgb(44, 42, 42);
+    font-size:15PX;
+text-decoration: none;}
+.product-card:hover .btn-ajouter{
+    opacity:1 ;
+}
+.btn-ajouter:hover{
+    background-color: #f5f3f377;
+    transition: all ease 0.2s;
+    
+}
+.btn-ajouter:hover a{
+    color:rgb(44, 42, 42); 
+    font-size:14PX;
+}
+.info-produit{
+    width: 100%;
+    height: 100px;
+    padding-left: 10PX ;
+    flex-direction: column;
+    background-color: #eeeeee;
+    border-radius: 20PX 0 ;
+}
+.produit{
+    text-transform: uppercase;
+}
+.inscript-produit{
+    width: 100%;
+    height:20px ;
+    line-height: 20PX; 
+    overflow: hidden;
+    opacity:0.5;
+    margin: 5px 0;
+}
+.prix{
+    font-weight: 900;
+    font-size: 20px; 
+    color: #fc3939;
+}
+.prix-actuel{
+    margin: left 20px;
+    opacity: 0.5;
+    text-decoration:line-through;
+
+}
+.fa-caret-down{
+   padding:  1PX;;
+
+}
+/* FEEDBACKS */
+#new .one .img{
+width: 100%;
+height: 100%;
+background-position: center center ;
+background-repeat:no-repeat;
+background-size: cover;
+position: relative;
+}
+.row{
+    display: flex;
+    display: grid;
+    grid-template-columns: auto auto;
+    margin:40px;
+    top: 0;
+    left: 0;
+    margin-left :10%;
+ 
+
+}
+
+.blogs {display: flex;
+    flex-direction: column;
+}
+.blogs h2{
+    padding:0 10vh;
+    font-size: 30px;
+    font-weight:bold ;
+    margin-bottom: 40px;
+    font-family:Arial, Helvetica, sans-serif;
+    color: #5a5757;
+    text-transform: capitalize;
+
+}
+.blogs .img-icon {
+    width: 100PX;
+}
+
+.blogs .blog-card {
+	width: 300px;
+	max-height: 450px;
+	padding: 15px;
+	margin: auto;
+	margin-top: 10px;
+	background-color: #fff;
+	box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2);
+}
+
+.blogs .blog-card:hover,
+.blogs .blog-card:focus
+{
+	cursor: pointer;
+	width: 310px;
+	box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.4);
+	-webkit-transition:all 0.5s ease;
+	-moz-transition:all 0.5s ease;
+	-o-transition:all 0.5s ease;
+	transition:all 0.5s ease;
+}
+
+
+
+.blogs .blog-card p{
+	margin-top: 0;
+	margin-bottom: 1rem;
+	font-size: 17px;
+	letter-spacing: 1px;
+	padding: 5px;
+    font-family:'Quintessential', cursive ;
+
+}
+.thirdcard{
+    margin: 50px 70%;
+}
+/*WHY CHOOSE US */
+#new p{
+    font-family:'Quintessential', cursive ;
+    margin: 0 10% 10% 10%;
+}
+#new h1{
+    font-size: 30px;
+    font-weight:bold;
+    margin-bottom: 40px;
+    font-family:Arial, Helvetica, sans-serif;
+    color: #5a5757;
+    text-transform: capitalize;
+}
+
+/* .banner1{
+    animation:slide1 12s linear infinite;
+}
+.banner2{
+    animation:slide2 12s linear infinite;
+}
+.banner3{
+    animation:slide3 12s linear infinite;
+}
+.banner4{
+    animation:slide4 12s linear infinite;
+}
+@keyframes slide1{
+    0%{
+        visibility: visible;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: hidden;
+    
+    }
+    75%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: visible;
+    }
+
+}
+@keyframes slide2{
+    0%{
+        visibility: hidden;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: visible;
+    
+    }
+    75%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: hidden;
+    }
+
+}
+@keyframes slide3{
+    0%{
+        visibility: hidden;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: hidden;
+    
+    }
+    75%{
+        visibility: visible;
+    }
+    100%{
+        visibility: hidden;
+    }
+
+}
+@keyframes slide4{
+    0%{
+        visibility: hidden;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: hidden;
+    
+    }
+    75%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: visible;
+    }
+
+} */
+/* .fa-solid {
+    position: absolute;
+    border: none;
+    width: 10vw;
+    height: 100%;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg,rgba(255,255,255,0)0%,#fff 100%);
+    cursor: pointer;
+    z-index: 8;
+} */

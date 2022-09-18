@@ -1,0 +1,66 @@
+section{
+    width: 100%;
+    display: block;
+    margin-top: 140PX;
+    margin-bottom: 200PX;
+   
+    position: relative;
+    font-family: 'Quintessential', cursive;}
+section .logo{
+    margin: 20PX auto 50px;
+}
+section .Devenir_vendeur{
+    border:2PX SOLID #5a5757be;
+    border-radius: 10PX;
+    background: white;
+    padding: 10px;
+    margin: 0 11%;
+}
+section .heading{
+    text-transform: capitalize;
+    color: #383838;
+    font-weight: 700;
+    font-size: 18PX;
+}
+section .des{
+    color: #383838;
+    margin: 20PX 0;
+    line-height: 25px;
+}
+section #applyFormBtn{
+    border: none;
+    outline: none;
+    background: #5a5757;
+    color: white;
+    padding: 10PX 30PX;
+    border-radius: 2PX;
+    text-transform: capitalize;
+    font-size: 14PX;
+    cursor: pointer;
+    font-family: 'Quintessential', cursive;
+    margin: 10PX 0;
+    width: auto;
+    
+}
+section .hide{
+    display: none;
+}
+section .apply-form{
+    margin: 0 7%;
+    margin-left: 11%;
+}
+
+section .apply-form input:not(input[type="checkbox"]){
+    width: 100%;
+    font-weight: 500;
+    margin-left:0.5%;
+}
+section .apply-form textarea{
+    
+    width: 100%;
+    height: 90PX;
+    resize: none;
+    padding: 10PX 20PX;
+    font-weight: 500;
+    margin-left:0.5%;
+}

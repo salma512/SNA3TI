@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section{
+    margin: auto;
+    margin-top: 140PX;
+    margin-bottom: 200PX;
+    width: 100%;
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Quintessential', cursive;
+}
+section input[type="text"],
+section input[type="password"],
+section input[type="email"],
+section textarea{
+    display: block;
+    width: 300px;
+    height: 40px;
+    padding: 20px;
+    border-radius: 5px;
+    background:white ;
+    border:2PX SOLID #5a5757be;
+    outline: none;
+    margin: 20px 12%;
+    text-transform: capitalize;
+    color: #383838;
+    font-size: 14px;
+    font-family: 'Quintessential', cursive;}
+
+section .submit-btn{
+    width: 300px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background:#5a5757 ;
+    color: white;
+    border-radius: 2px;
+    text-transform: capitalize;
+    border: none;
+    cursor: pointer;
+    display: block;
+    margin:20px 12%;
+    margin-bottom: 10PX;
+    margin-top: 10PX;
+    font-family: 'Quintessential', cursive;}
+
+    section .checkbox{
+    position: relative;
+    width: 15px;
+    height: 15px;
+    margin-left: 40PX;
+    border-radius: 2px;
+    border:1PX solid ;
+    cursor:pointer;
+}
+
+section label{
+    text-transform: capitalize;
+    display:inline-block ;
+    margin-bottom: 10PX;
+    margin-top: 10PX;
+    font-size: 14px;
+    color: #383838; 
+}
+section label a{
+    color:#383838 ;
+}
+section .link{
+    color:#383838;
+    text-transform: capitalize;
+    text-align: center;
+    display: block;
+    margin-top: 10PX;
+    font-size: 15px;
+    text-decoration:underline;
+}
+section p{
+    color:#383838;
+    text-transform: capitalize;
+    text-align: center;
+    display: block;
+    margin-top: 10PX;
+}
+#des-mdp{
+    margin-right: -100px;
+}
+
